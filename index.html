@@ -1,160 +1,235 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <title>Javier Melano</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Operaciones, datos y toma de decisiones" />
+    <meta charset="UTF-8">
+    <title>Javier Melano | Data, Claims & Insurance Transformation</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Javier Melano - Data & BI Specialist, Claims Transformation, Seguros e Insurtech. MBA.">
+    <style>
+        :root {
+            --bg: #0f172a;
+            --bg-light: #111827;
+            --text: #e5e7eb;
+            --muted: #9ca3af;
+            --accent: #38bdf8;
+            --card: #020617;
+        }
 
-  <style>
-    body {
-      margin: 0;
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-      background-color: #0f172a;
-      color: #e5e7eb;
-      line-height: 1.6;
-    }
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
 
-    .container {
-      max-width: 960px;
-      margin: auto;
-      padding: 80px 24px;
-    }
+        body {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+        }
 
-    h1 {
-      font-size: 2.6rem;
-      margin-bottom: 6px;
-    }
+        a {
+            color: var(--accent);
+            text-decoration: none;
+        }
 
-    h2 {
-      font-size: 1.4rem;
-      margin-top: 64px;
-      margin-bottom: 16px;
-      color: #38bdf8;
-    }
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 80px 24px;
+        }
 
-    p {
-      max-width: 760px;
-      font-size: 1.05rem;
-    }
+        /* HERO */
+        .hero {
+            margin-bottom: 80px;
+        }
 
-    .tagline {
-      font-size: 1.15rem;
-      color: #94a3b8;
-      max-width: 760px;
-    }
+        .hero h1 {
+            font-size: 2.6rem;
+            font-weight: 700;
+            margin-bottom: 16px;
+        }
 
-    .divider {
-      margin: 64px 0;
-      border-top: 1px solid #1e293b;
-    }
+        .hero p {
+            font-size: 1.2rem;
+            color: var(--muted);
+            max-width: 720px;
+        }
 
-    .contact a {
-      color: #38bdf8;
-      text-decoration: none;
-      margin-right: 20px;
-      font-weight: 500;
-    }
+        .cta {
+            margin-top: 32px;
+            display: flex;
+            gap: 16px;
+            flex-wrap: wrap;
+        }
 
-    .contact a:hover {
-      text-decoration: underline;
-    }
-  </style>
+        .btn {
+            padding: 12px 20px;
+            border-radius: 6px;
+            font-weight: 600;
+            border: 1px solid var(--accent);
+            color: var(--accent);
+            background: transparent;
+            transition: all 0.2s ease;
+        }
+
+        .btn.primary {
+            background: var(--accent);
+            color: #020617;
+        }
+
+        .btn:hover {
+            opacity: 0.85;
+        }
+
+        /* SECTIONS */
+        section {
+            margin-bottom: 72px;
+        }
+
+        section h2 {
+            font-size: 1.6rem;
+            margin-bottom: 24px;
+        }
+
+        section p {
+            color: var(--muted);
+            max-width: 820px;
+            margin-bottom: 16px;
+        }
+
+        /* CARDS */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 24px;
+        }
+
+        .card {
+            background: var(--card);
+            padding: 24px;
+            border-radius: 8px;
+            border: 1px solid #020617;
+        }
+
+        .card h3 {
+            font-size: 1.1rem;
+            margin-bottom: 12px;
+        }
+
+        .card p {
+            font-size: 0.95rem;
+            color: var(--muted);
+        }
+
+        /* LISTS */
+        ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        li {
+            margin-bottom: 12px;
+            color: var(--muted);
+        }
+
+        /* FOOTER */
+        footer {
+            border-top: 1px solid #020617;
+            padding-top: 32px;
+            color: var(--muted);
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 600px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
 </head>
-
 <body>
-  <div class="container">
 
-    <h1>Javier Melano</h1>
-    <p class="tagline">
-      Ayudo a organizaciones a ordenar operaciones, mejorar la calidad de las decisiones
-      y ganar eficiencia a partir de procesos claros y datos confiables.
-    </p>
+    <div class="container">
 
-    <div class="divider"></div>
+        <!-- HERO -->
+        <div class="hero">
+            <h1>Ordeno operaciones complejas y las convierto en decisiones claras.</h1>
+            <p>
+                Trabajo en la intersección entre siniestros, datos y gestión, ayudando a organizaciones de seguros e insurtech
+                a mejorar eficiencia, trazabilidad y calidad de decisión.
+            </p>
 
-    <h2>Qué hago</h2>
-    <p>
-      Trabajo con organizaciones que atraviesan desorden operativo, falta de claridad
-      en los procesos o dificultades para tomar decisiones consistentes.
-    </p>
-    <p>
-      Mi foco está en ordenar la operación, definir procesos, clarificar roles y generar
-      información útil para que los equipos trabajen con menor fricción y mayor eficiencia.
-    </p>
-    <p>
-      Busco resultados sostenibles: alcanzar objetivos sin descuidar las formas, los medios
-      ni el impacto sobre las personas que ejecutan la operación.
-    </p>
+            <div class="cta">
+                <a class="btn primary" href="https://www.linkedin.com/" target="_blank">Ver LinkedIn</a>
+                <a class="btn" href="#como-trabajo">Cómo trabajo</a>
+            </div>
+        </div>
 
-    <h2>Cómo pienso</h2>
+        <!-- COMO TRABAJO -->
+        <section id="como-trabajo">
+            <h2>Cómo encaro los problemas</h2>
+            <ul>
+                <li>Me siento cómodo en contextos de desorden operativo y alta complejidad.</li>
+                <li>Uso procesos para ordenar, liberar carga operativa y reducir presión sobre los equipos.</li>
+                <li>No persigo objetivos a cualquier costo: los medios y las formas importan.</li>
+                <li>Trabajo con datos para decidir sobre la realidad, no sobre percepciones.</li>
+            </ul>
+        </section>
 
-    <p>
-      <strong>El proceso es una herramienta, no un fin.</strong><br />
-      Un buen proceso ordena la operación, libera tiempo y reduce presión sobre los equipos.
-      Si no mejora el trabajo diario, es solo burocracia.
-    </p>
+        <!-- IMPACTO -->
+        <section>
+            <h2>Dónde genero impacto</h2>
 
-    <p>
-      <strong>Los objetivos no justifican cualquier medio.</strong><br />
-      Los resultados importan, pero las decisiones y las formas también. Las malas prácticas
-      terminan deteriorando equipos y procesos.
-    </p>
+            <div class="grid">
+                <div class="card">
+                    <h3>Gestión corporativa y retail</h3>
+                    <p>
+                        Lideré operaciones de siniestros en entornos corporativos y masivos, adaptando procesos
+                        a riesgos complejos y carteras de alto volumen.
+                    </p>
+                </div>
 
-    <p>
-      <strong>Decidir con datos mejora la calidad de la decisión.</strong><br />
-      Sin trazabilidad ni información confiable, las decisiones se basan en percepciones.
-      Los datos permiten ver la realidad, evaluar alternativas y anticiparse.
-    </p>
+                <div class="card">
+                    <h3>Datos aplicados a decisiones</h3>
+                    <p>
+                        Implementé tableros de control y KPIs para más de 5.000 casos anuales,
+                        mejorando tiempos, costos y calidad de gestión.
+                    </p>
+                </div>
 
-    <p>
-      <strong>Menos micromanagement, más foco en lo relevante.</strong><br />
-      Controlar tareas que no impactan en el resultado desvía energía. El control debe ser
-      selectivo y orientado a resultados, no a ocupación.
-    </p>
+                <div class="card">
+                    <h3>Insurtech & transformación</h3>
+                    <p>
+                        Participé en la expansión LATAM de soluciones insurtech,
+                        articulando negocio, tecnología y análisis de datos.
+                    </p>
+                </div>
+            </div>
+        </section>
 
-    <p>
-      <strong>La comunicación sostiene la operación.</strong><br />
-      La claridad hacia arriba y hacia abajo es clave para generar confianza, delegar y
-      sostener cambios en el tiempo.
-    </p>
+        <!-- HERRAMIENTAS -->
+        <section>
+            <h2>Herramientas y enfoque</h2>
+            <p>
+                Power BI · Análisis de datos · KPIs operativos · Diseño de procesos · Automatización funcional (RPA / APIs)
+            </p>
+        </section>
 
-   <div class="divider"></div>
+        <!-- CIERRE -->
+        <section>
+            <h2>Qué busco</h2>
+            <p>
+                Me interesa sumarme a organizaciones que necesiten ordenar operaciones,
+                mejorar la calidad de sus decisiones y escalar procesos con criterio y sustentabilidad.
+            </p>
+        </section>
 
-<h2>Sobre mí</h2>
+        <footer>
+            © Javier Melano · Data & BI · Claims & Insurance Transformation
+        </footer>
 
-<p>
-  Vengo de roles de liderazgo operativo y gestión, principalmente en entornos
-  regulados y de alta complejidad, donde la presión diaria y la toma de decisiones
-  son parte del trabajo.
-</p>
+    </div>
 
-<p>
-  Mi recorrido combina gestión de operaciones, análisis de información y conducción
-  de equipos, con una mirada práctica orientada a ordenar, priorizar y ejecutar
-  mejoras concretas.
-</p>
-
-<p>
-  Me siento cómodo trabajando entre lo estratégico y lo operativo: entender el
-  problema, bajarlo a tierra, diseñar una solución posible y acompañar su
-  implementación.
-</p>
-
-<p>
-  Valoro los entornos con objetivos claros, delegación real y comunicación directa.
-  No trabajo bien en contextos donde el miedo o el desorden son la forma de gestión.
-</p>
-
-<div class="divider"></div>
-
-<div class="contact">
-  <h2>Contacto</h2>
-  <a href="https://www.linkedin.com/in/javiermelano" target="_blank">LinkedIn</a>
-  <a href="mailto:jnmelano@gmail.com">Email</a>
-</div>
-
-
-  </div>
 </body>
 </html>
